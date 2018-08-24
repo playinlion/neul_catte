@@ -12,7 +12,7 @@
       <p>당신의 플레이리스트와 꼭 맞는 <%= @tapes.count %>개의 테이프를 준비했어요.</p>
     </div>
 
-
+  <div class="total_tape_container">
     <% @tapes.each do |t| %>
       <div class="tape_theme_main">
         <!-- <!— 사용자가 업로드하는 커버 이미지 —> -->
@@ -25,6 +25,7 @@
         <p class="tape_title_main"><%= t.tape_title %></p>
       </div>
     <% end%>
+  </div>
   </div>
 
   <div class="logo_03_container">
